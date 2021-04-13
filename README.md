@@ -1,4 +1,4 @@
-# Kata-howto
+# Kata-HowTo
 
 **Download links :**
 
@@ -36,16 +36,26 @@ You will find Kata project for the Spark, Kafka and Hive.
 Once you import project into IntelliJ it should be up and running.
 You will find the correction in the `correction` branch.
 
-**Push project to your local folder**
+## **Building project**
+
+Once you cloned the project, directly try to build with maven install.
+IntelliJ will ask you to set SDK: please directly download `JDK 1.8` provided by IntelliJ.
+
+**kata-spark**
+
+You will only execute program from your own computer.
+Please download the Scala plugin for IntelliJ in `File -> Settings -> Plugin` and search for "Scala".
+Once you restarded the IDE, please Setup Scala SDK to a version `2.12.X`
+
+If you cannot run the KataX program, please ensure your scala directory is properly marked as Sources in `File -> Project Structure -> Modules`
+
+**kata-hive and kata-kafka**
 
 Once you builded a project with `maven install`, you will find the jar generated in `target` directory.
 Now you can upload it via MobaXTerm to your home directory.
 
-For kata-spark, you have to specify the main class to be executed :
-`spark-submit --master yarn --class com.finaxys.Kata5 kata-spark-1.0-SNAPSHOT-shaded.jar`
-
 For kata-hive, you just have to specify the jar in the creation of your function inside the hive client (you will need to push it first to HDFS).
-See explanations furnished in the slides.
+See explanations provided in the slides.
 
 For kata-kafka, just launch `java -jar kata-kafka-1.0-SNAPSHOT-shaded.jar`
 
