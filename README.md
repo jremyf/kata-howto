@@ -38,7 +38,14 @@ You will find the correction in the `correction` branch.
 
 ## **Building project**
 
+Clone the project in Intellij :
+File -> New -> Project from Version Control
+[Enter git address]
+
+
 Once you cloned the project, directly try to build with maven install.
+Maven Tab (Upper Right) -> [project] -> Lifecycle -> install
+
 IntelliJ will ask you to set SDK: please directly download `JDK 1.8` provided by IntelliJ.
 
 **kata-spark**
